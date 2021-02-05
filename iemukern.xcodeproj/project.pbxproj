@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0740817B20C5402700ED04F6 /* exports.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0740817920C5402700ED04F6 /* exports.cpp */; };
+		0740817C20C5402700ED04F6 /* exports.h in Headers */ = {isa = PBXBuildFile; fileRef = 0740817A20C5402700ED04F6 /* exports.h */; };
+		074565F123B23DDA0092A055 /* iemukern.s in Sources */ = {isa = PBXBuildFile; fileRef = 074565F023B23DDA0092A055 /* iemukern.s */; };
+		1946CD6419DAAFCF00580D67 /* iemukern.h in Headers */ = {isa = PBXBuildFile; fileRef = 1946CD6319DAAFCF00580D67 /* iemukern.h */; };
+		1946CD6619DAAFCF00580D67 /* iemukern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1946CD6519DAAFCF00580D67 /* iemukern.cpp */; };
+		1999A7661F485C7B00BE8C13 /* iemukern.kext in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1946CD5E19DAAFCF00580D67 /* iemukern.kext */; };
+		199CFE4D19E03567001F58D2 /* cpu_protection.c in Sources */ = {isa = PBXBuildFile; fileRef = 199CFE4B19E03567001F58D2 /* cpu_protection.c */; };
+		199CFE4E19E03567001F58D2 /* cpu_protection.h in Headers */ = {isa = PBXBuildFile; fileRef = 199CFE4C19E03567001F58D2 /* cpu_protection.h */; };
+		19A3F5B519DE5E8100CC5CE4 /* idt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19A3F5B319DE5E8100CC5CE4 /* idt.cpp */; };
+		19A3F5B619DE5E8100CC5CE4 /* idt.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A3F5B419DE5E8100CC5CE4 /* idt.h */; };
+		19A3F5BA19DEE83D00CC5CE4 /* hooks.c in Sources */ = {isa = PBXBuildFile; fileRef = 19A3F5B919DEE83D00CC5CE4 /* hooks.c */; };
+		69354A9423D32F790034D973 /* InMemoryMachO.h in Headers */ = {isa = PBXBuildFile; fileRef = 69354A9223D32F780034D973 /* InMemoryMachO.h */; };
+		69354A9723D3417F0034D973 /* DyldPatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69354A9523D3417F0034D973 /* DyldPatcher.cpp */; };
+		69354A9823D3417F0034D973 /* DyldPatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 69354A9623D3417F0034D973 /* DyldPatcher.h */; };
+		693D009223D5794900695AC7 /* vfs.h in Headers */ = {isa = PBXBuildFile; fileRef = 693D009023D5794900695AC7 /* vfs.h */; };
+		693D009323D5794900695AC7 /* vfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 693D009123D5794900695AC7 /* vfs.c */; };
+		8B12D44623C71C650002CEB1 /* MachOLocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D44423C71C650002CEB1 /* MachOLocator.cpp */; };
+		8B12D44723C71C650002CEB1 /* MachOLocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B12D44523C71C650002CEB1 /* MachOLocator.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1999A7651F485C7400BE8C13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${HOME}/Develop/kernels";
+			dstSubfolderSpec = 0;
+			files = (
+				1999A7661F485C7B00BE8C13 /* iemukern.kext in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0740817920C5402700ED04F6 /* exports.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exports.cpp; sourceTree = "<group>"; };
+		0740817A20C5402700ED04F6 /* exports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exports.h; sourceTree = "<group>"; };
+		074565F023B23DDA0092A055 /* iemukern.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = iemukern.s; sourceTree = "<group>"; };
+		0775E7BC2084566A00D8EC09 /* log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		1946CD5E19DAAFCF00580D67 /* iemukern.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iemukern.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		1946CD6219DAAFCF00580D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1946CD6319DAAFCF00580D67 /* iemukern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iemukern.h; sourceTree = "<group>"; };
+		1946CD6519DAAFCF00580D67 /* iemukern.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = iemukern.cpp; sourceTree = "<group>"; };
+		199CFE4B19E03567001F58D2 /* cpu_protection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpu_protection.c; sourceTree = "<group>"; };
+		199CFE4C19E03567001F58D2 /* cpu_protection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_protection.h; sourceTree = "<group>"; };
+		19A30EFF19E26C5F00719590 /* hooks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hooks.h; sourceTree = "<group>"; };
+		19A3F5B319DE5E8100CC5CE4 /* idt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = idt.cpp; sourceTree = "<group>"; };
+		19A3F5B419DE5E8100CC5CE4 /* idt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idt.h; sourceTree = "<group>"; };
+		19A3F5B919DEE83D00CC5CE4 /* hooks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hooks.c; sourceTree = "<group>"; };
+		19A771451ADE0CCB007F59DC /* thread_state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = thread_state.h; path = ../thread_state.h; sourceTree = "<group>"; };
+		69354A9223D32F780034D973 /* InMemoryMachO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InMemoryMachO.h; sourceTree = "<group>"; };
+		69354A9523D3417F0034D973 /* DyldPatcher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DyldPatcher.cpp; sourceTree = "<group>"; };
+		69354A9623D3417F0034D973 /* DyldPatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyldPatcher.h; sourceTree = "<group>"; };
+		693D009023D5794900695AC7 /* vfs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vfs.h; sourceTree = "<group>"; };
+		693D009123D5794900695AC7 /* vfs.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vfs.c; sourceTree = "<group>"; };
+		8B12D44423C71C650002CEB1 /* MachOLocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachOLocator.cpp; sourceTree = "<group>"; };
+		8B12D44523C71C650002CEB1 /* MachOLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOLocator.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1946CD5A19DAAFCF00580D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1946CD5419DAAFCF00580D67 = {
+			isa = PBXGroup;
+			children = (
+				1946CD6019DAAFCF00580D67 /* iemukern */,
+				1946CD5F19DAAFCF00580D67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1946CD5F19DAAFCF00580D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1946CD5E19DAAFCF00580D67 /* iemukern.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1946CD6019DAAFCF00580D67 /* iemukern */ = {
+			isa = PBXGroup;
+			children = (
+				19A771451ADE0CCB007F59DC /* thread_state.h */,
+				1946CD6319DAAFCF00580D67 /* iemukern.h */,
+				1946CD6519DAAFCF00580D67 /* iemukern.cpp */,
+				693D009023D5794900695AC7 /* vfs.h */,
+				693D009123D5794900695AC7 /* vfs.c */,
+				074565F023B23DDA0092A055 /* iemukern.s */,
+				69354A9523D3417F0034D973 /* DyldPatcher.cpp */,
+				69354A9623D3417F0034D973 /* DyldPatcher.h */,
+				8B12D44423C71C650002CEB1 /* MachOLocator.cpp */,
+				8B12D44523C71C650002CEB1 /* MachOLocator.h */,
+				69354A9223D32F780034D973 /* InMemoryMachO.h */,
+				19A3F5B319DE5E8100CC5CE4 /* idt.cpp */,
+				19A3F5B419DE5E8100CC5CE4 /* idt.h */,
+				19A30EFF19E26C5F00719590 /* hooks.h */,
+				19A3F5B919DEE83D00CC5CE4 /* hooks.c */,
+				199CFE4B19E03567001F58D2 /* cpu_protection.c */,
+				199CFE4C19E03567001F58D2 /* cpu_protection.h */,
+				0775E7BC2084566A00D8EC09 /* log.h */,
+				0740817920C5402700ED04F6 /* exports.cpp */,
+				0740817A20C5402700ED04F6 /* exports.h */,
+				1946CD6119DAAFCF00580D67 /* Supporting Files */,
+			);
+			path = iemukern;
+			sourceTree = "<group>";
+		};
+		1946CD6119DAAFCF00580D67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1946CD6219DAAFCF00580D67 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1946CD5B19DAAFCF00580D67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0740817C20C5402700ED04F6 /* exports.h in Headers */,
+				199CFE4E19E03567001F58D2 /* cpu_protection.h in Headers */,
+				693D009223D5794900695AC7 /* vfs.h in Headers */,
+				8B12D44723C71C650002CEB1 /* MachOLocator.h in Headers */,
+				69354A9423D32F790034D973 /* InMemoryMachO.h in Headers */,
+				69354A9823D3417F0034D973 /* DyldPatcher.h in Headers */,
+				19A3F5B619DE5E8100CC5CE4 /* idt.h in Headers */,
+				1946CD6419DAAFCF00580D67 /* iemukern.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1946CD5D19DAAFCF00580D67 /* iemukern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1946CD6919DAAFCF00580D67 /* Build configuration list for PBXNativeTarget "iemukern" */;
+			buildPhases = (
+				1946CD5919DAAFCF00580D67 /* Sources */,
+				1946CD5A19DAAFCF00580D67 /* Frameworks */,
+				1946CD5B19DAAFCF00580D67 /* Headers */,
+				1946CD5C19DAAFCF00580D67 /* Resources */,
+				0775E7BD208456F100D8EC09 /* ShellScript */,
+				1999A7651F485C7400BE8C13 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iemukern;
+			productName = iemukern;
+			productReference = 1946CD5E19DAAFCF00580D67 /* iemukern.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1946CD5519DAAFCF00580D67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Jay Wong";
+				TargetAttributes = {
+					1946CD5D19DAAFCF00580D67 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 1946CD5819DAAFCF00580D67 /* Build configuration list for PBXProject "iemukern" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 1946CD5419DAAFCF00580D67;
+			productRefGroup = 1946CD5F19DAAFCF00580D67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1946CD5D19DAAFCF00580D67 /* iemukern */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1946CD5C19DAAFCF00580D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0775E7BD208456F100D8EC09 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -e /usr/bin/strip; then /usr/bin/strip -x ${TARGET_BUILD_DIR}/${EXECUTABLE_PATH}; fi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1946CD5919DAAFCF00580D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0740817B20C5402700ED04F6 /* exports.cpp in Sources */,
+				199CFE4D19E03567001F58D2 /* cpu_protection.c in Sources */,
+				69354A9723D3417F0034D973 /* DyldPatcher.cpp in Sources */,
+				19A3F5BA19DEE83D00CC5CE4 /* hooks.c in Sources */,
+				693D009323D5794900695AC7 /* vfs.c in Sources */,
+				074565F123B23DDA0092A055 /* iemukern.s in Sources */,
+				8B12D44623C71C650002CEB1 /* MachOLocator.cpp in Sources */,
+				1946CD6619DAAFCF00580D67 /* iemukern.cpp in Sources */,
+				19A3F5B519DE5E8100CC5CE4 /* idt.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1946CD6719DAAFCF00580D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1946CD6819DAAFCF00580D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1946CD6A19DAAFCF00580D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				INFOPLIST_FILE = iemukern/Info.plist;
+				MODULE_NAME = cod.iemukern;
+				MODULE_VERSION = 1.0.0d1;
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1946CD6B19DAAFCF00580D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				GENERATE_MASTER_OBJECT_FILE = NO;
+				INFOPLIST_FILE = iemukern/Info.plist;
+				MODULE_NAME = cod.iemukern;
+				MODULE_VERSION = 1.0.0d1;
+				OTHER_CFLAGS = "-fvisibility=hidden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1946CD5819DAAFCF00580D67 /* Build configuration list for PBXProject "iemukern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1946CD6719DAAFCF00580D67 /* Debug */,
+				1946CD6819DAAFCF00580D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1946CD6919DAAFCF00580D67 /* Build configuration list for PBXNativeTarget "iemukern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1946CD6A19DAAFCF00580D67 /* Debug */,
+				1946CD6B19DAAFCF00580D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1946CD5519DAAFCF00580D67 /* Project object */;
+}

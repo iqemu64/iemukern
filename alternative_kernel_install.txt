@@ -1,0 +1,36 @@
+Setup on CATALINA:
+
+Target:
+
+Run sw_vers | grep BuildVersion to determine your build version.
+Download the appropriate Kernel Debug Kit from Apple.
+Install the KDK package.
+Reboot to the Recovery System by restarting your target machine and hold down the Command and R keys at startup.
+From the Utilities menu, select Terminal.
+Type, csrutil disable to disable System Integrity Protection.
+sudo reboot
+sudo mount -uw /
+sudo cp /Library/Developer/KDKs/<KDK Version>/System/Library/Kernels/kernel.development /System/Library/Kernels/
+sudo kextcache -invalidate /
+sudo nvram boot-args="debug=0x44 kcsuffix=development -v"
+sudo reboot
+
+
+Host:
+
+Install the KDK package.
+echo "settings set target.load-script-from-symbol-file true" >> ~/.lldbinit
+
+
+Uninstalling:
+
+To return to the Release kernel, simply perform the following steps on your target machine.
+
+sudo mount -uw /
+sudo rm /System/Library/Kernels/kernel.development
+sudo nvram -d boot-args
+sudo rm /System/Library/Caches/com.apple.kext.caches/Startup/kernelcache*
+sudo rm /System/Library/PrelinkedKernels/prelinkedkernel*
+sudo rm /Library/Apple/System/Library/PrelinkedKernels/prelinkedkernel*
+sudo kextcache -invalidate /
+sudo reboot
